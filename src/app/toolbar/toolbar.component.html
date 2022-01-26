@@ -1,0 +1,53 @@
+<mat-toolbar style="background-color: green">
+  <span>
+    <img src="assets/bumlogo.png" />
+  </span>
+  <span class="example-spacer"></span>
+  <span>
+    <button mat-button [matMenuTriggerFor]="aboveMenu">Nuestra Visión</button>
+    <mat-menu #aboveMenu="matMenu" yPosition="above">
+      <button routerLink="first-component" mat-menu-item>
+        ¿Qué proponemos?
+      </button>
+      <button mat-menu-item>Informe clima Málaga</button>
+      <button mat-menu-item>Historia en fotos</button>
+      <button mat-menu-item>Mapa de situación</button>
+      <button mat-menu-item>Quienes somos</button>
+      <button mat-menu-item>Contacto</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="belowMenu">Bosque Urbano</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item>Estado del BUM</button>
+      <button mat-menu-item>Nuestro bosque</button>
+      <button mat-menu-item>Análisis del BUM</button>
+      <button mat-menu-item>Activos del BUM</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="beforeMenu">Novedades</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Últimas noticias</button>
+      <button mat-menu-item>Aparicion en prensa</button>
+      <button mat-menu-item>BUM en prensa</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="afterMenu">BUM y ODS</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item>Expo 2027</button>
+      <button mat-menu-item>BUM y salud</button>
+      <button mat-menu-item>BUM y el pequeño comercio</button>
+      <button mat-menu-item>Enlaces de interés</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="afterMenu">Participa</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item>Carta de adhesión</button>
+      <button mat-menu-item>Listado de adhesiones</button>
+      <button mat-menu-item>BUM y el pequeño comercio</button>
+      <button mat-menu-item>Apoyos</button>
+      <button mat-menu-item>Súmate a la mesa</button>
+      <button mat-menu-item>El regalo de la naturaleza</button>
+      <button mat-menu-item>Campaña en Change.org</button>
+    </mat-menu>
+  </span>
+</mat-toolbar>
